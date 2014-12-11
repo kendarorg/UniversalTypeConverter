@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B457966F-85D6-45B6-8CF6-C1CCA5FC6C67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TB.ComponentModel.Tests.Unit</RootNamespace>
+    <AssemblyName>UniversalTypeConverter.Tests.Unit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentAssertions, Version=3.2.1.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FluentAssertions.3.2.1\lib\net40\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core">
+      <HintPath>..\packages\FluentAssertions.3.2.1\lib\net40\FluentAssertions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestStringConcatenator.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToStringRepresentation_Tests.cs" />
+    <Compile Include="FlagsTestEnum.cs" />
+    <Compile Include="GenericStringConcatenator_Tests.cs" />
+    <Compile Include="ObjectExtension_Tests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleTestEnum.cs" />
+    <Compile Include="TestStringSplitter.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvertToT_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvertToT_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvertToT_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvertToT_4_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvert_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvert_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvert_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_CanConvert_4_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Cast_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToEnumerableT_FromString_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToEnumerableT_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToEnumerable_FromString_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToEnumerable_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToT_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToT_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToT_4_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_ConvertToT_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Convert_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Convert_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Convert_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Convert_4_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Options_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_Tests.Enum_Flags.cs.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.Guid.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.Enum_Simple.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableBool.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToBool.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToByte.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToChar.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToDateTime.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToDecimal.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToDouble.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToFloat.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToInt.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToLong.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableByte.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableChar.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableDateTime.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableDecimal.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableDouble.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableFloat.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableInt.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableLong.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableSByte.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableShort.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableUInt.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableULong.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToNullableUShort.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToObject.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToSByte.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToShort.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToString.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToUInt.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToULong.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_Tests.ToUShort.cs">
+      <DependentUpon>UniversalTypeConverter_Tests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalTypeConverter_TryConvertToT_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvertToT_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvertToT_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvertToT_4_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvert_1_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvert_2_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvert_3_Tests.cs" />
+    <Compile Include="UniversalTypeConverter_TryConvert_4_Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniversalTypeConverter\UniversalTypeConverter.csproj">
+      <Project>{429ED4DC-B0C1-4C42-868F-704327370382}</Project>
+      <Name>UniversalTypeConverter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="_Documents\IntegratedTypesTestMatrix.xls" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
